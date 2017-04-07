@@ -1,0 +1,26 @@
+% Load Theme 
+%	- Since December 2016 Metropolis is part of MikTeX and TeX Live 2016.
+% 	- Refer to the following document for possible customisation options:
+% http://vesta.informatik.rwth-aachen.de/ftp/pub/mirror/ctan/macros/latex/contrib/beamer-contrib/themes/metropolis/doc/metropolistheme.pdf
+
+% On the right you can see the possible values. '*' indicates the default. Refer to the aforementioned document
+\usetheme[
+	titleformat=regular,		% regular*,smallcaps,allsmallcaps,allcaps
+	sectionpage=none,			% none,simple,progressbar*
+	subsectionpage=none,		% none*,simple,progressbar
+	numbering=counter,			% none,counter*,fraction
+	progressbar=frametitle,		% none*,head,frametitle,foot
+	block=fill,					% transparent*,fill
+	background=light			% dark,light*
+	]{metropolis}
+
+% Defines CAU Kiel purple color and set it for highlights
+\definecolor{cau-purple}{HTML}{98007D}
+\setbeamercolor{progress bar}{fg=cau-purple}
+
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath, amssymb}
+\usepackage{verbatim} % for comment blocks \begin{comment} \end{comment}
+\usepackage{eurosym}
+\graphicspath{{./images/}}
