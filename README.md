@@ -1,5 +1,7 @@
 # CAU Kiel themed latex template (unofficial)
-A latex beamer template for CAU Kiel students.
+A latex beamer template for CAU Kiel students. The most up to date example document is [here](./helpfiles/presentation.pdf).
+
+![Main slide example screenshot](/images/2017/04/demo-screenshot.png)
 
 ## Usage
 
@@ -38,9 +40,6 @@ I'd recommend using an 'IDE' like texstudio. The command is more or less just co
 ├── preamble.tex
 └── presentation.tex
 ```
-
-## Example
-The most up to date example document is [here](./helpfiles/presentation.pdf).
 
 ## Todos
 - [ ] Explain custom commands in `commands.tex`
