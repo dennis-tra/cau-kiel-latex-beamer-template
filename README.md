@@ -1,7 +1,5 @@
 # CAU Kiel themed latex template (unofficial)
-A latex beamer template for CAU Kiel students. The most up to date example document is [here](./helpfiles/presentation.pdf).
-
-![Main slide example screenshot](./images/demo-screenshot.png)
+A latex beamer template for CAU Kiel students. The most up to date example document is [here](./helpfiles/presentation.pdf). Demo images below.
 
 ## Usage
 
@@ -47,3 +45,7 @@ I'd recommend using an 'IDE' like texstudio. The command is more or less just co
 
 ## Disclaimer
 This is **not** an official latex beamer template of the CAU Kiel. It'd be great if it'll come that far though.
+
+## Demo image
+
+![Main slide example screenshot](./images/demo-screenshot.png)
