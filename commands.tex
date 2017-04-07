@@ -1,0 +1,34 @@
+% ---- Useful Command ---
+\newcommand{\tw}{\textwidth}
+
+\newcommand{\backupbegin}{
+	\newcounter{finalframe}
+	\setcounter{finalframe}{\value{framenumber}}
+}
+
+\newcommand{\backupend}{
+   \setcounter{framenumber}{\value{finalframe}}
+}
+
+% ---- Fast-Fig Commands ----
+\newcommand{\fastfig}[3][false]{
+	\begin{figure}
+		\centering
+		\includegraphics[width=#3]{#2}
+		\ifthenelse{\equal{#1}{false}}{}{\vspace{0cm}\caption*{#1}}
+	\end{figure}
+}
+\newcommand{\smallfastfig}[3][false]{
+	\begin{figure}
+		\centering
+		\includegraphics[width=#3]{#2}
+		\ifthenelse{\equal{#1}{false}}{}{\caption*{#1}}
+	\end{figure}
+}
+\newcommand{\fastSCfig}[3][false]{
+	\begin{SCfigure}
+		\centering
+		\includegraphics[width=#3]{#2}
+		\ifthenelse{\equal{#1}{false}}{}{\caption*{#1}}
+	\end{SCfigure}
+}
