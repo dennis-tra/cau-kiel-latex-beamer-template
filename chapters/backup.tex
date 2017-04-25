@@ -1,20 +1,12 @@
-\appendix
-\backupbegin
+\appendix % automatically turn off slide numbering and progress bars
 
-\setbeamertemplate{footline}{}
-\begin{frame}[noframenumbering]
+\begin{frame}[fragile]{Backup slides}
+	Sometimes, it is useful to add slides at the end of your presentation to
+	refer to during audience questions.
+	
+	The best way to do this is to include the \verb|appendixnumberbeamer|
+	package in your preamble and call \verb|\appendix| before your backup slides.
+	
+	Metropolis will automatically turn off slide numbering and progress bars for
+	slides in the appendix.
 \end{frame}
-
-%********************************************************************
-\setbeamertemplate{footline}[backup-eng]
-%********************************************************************
-
-\begin{frame}{Test Channels}
-\setbeamertemplate{footline}[none]
-
-\end{frame}
-
-
-%********************************************************************
-
-\backupend
