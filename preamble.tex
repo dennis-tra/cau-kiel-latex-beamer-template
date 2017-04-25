@@ -1,4 +1,4 @@
-% Load Theme 
+% Load Theme
 %	- Since December 2016 Metropolis is part of MikTeX and TeX Live 2016.
 % 	- Refer to the following document for possible customisation options:
 % http://vesta.informatik.rwth-aachen.de/ftp/pub/mirror/ctan/macros/latex/contrib/beamer-contrib/themes/metropolis/doc/metropolistheme.pdf
@@ -6,7 +6,7 @@
 % On the right you can see the possible values. '*' indicates the default. Refer to the aforementioned document
 \usetheme[
 	titleformat=regular,		% regular*,smallcaps,allsmallcaps,allcaps
-	sectionpage=none,			% none,simple,progressbar*
+	sectionpage=progressbar,	% none,simple,progressbar*
 	subsectionpage=none,		% none*,simple,progressbar
 	numbering=counter,			% none,counter*,fraction
 	progressbar=frametitle,		% none*,head,frametitle,foot
@@ -14,13 +14,24 @@
 	background=light			% dark,light*
 	]{metropolis}
 
-% Defines CAU Kiel purple color and set it for highlights
-\definecolor{cau-purple}{HTML}{98007D}
-\setbeamercolor{progress bar}{fg=cau-purple}
-
 \usepackage[ngerman]{babel}
 \usepackage{graphicx}
-\usepackage{amsmath, amssymb}
+\usepackage{booktabs} % en­hances the qual­ity of ta­bles in LaTeX
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{amsmath, amssymb, amsfonts}
 \usepackage{verbatim} % for comment blocks \begin{comment} \end{comment}
 \usepackage{eurosym}
-\graphicspath{{./images/}}
+
+\definecolor{cau-purple}{HTML}{98007D}
+\setbeamercolor{progress bar}{fg=cau-purple}
+\setbeamercolor{alerted text}{fg=cau-purple}
+\setbeamercolor{background canvas}{bg=white} % Feel free to remove this line, but when copying images from other sources into this document you'll see their white background
+
+\setbeamertemplate{frame footer}{CAU Kiel}
+\graphicspath{{./images/}} % no subfolder needed in \includegraphics
+
+\addtobeamertemplate{frametitle}{}{%
+	\begin{tikzpicture}[remember picture,overlay]
+	\node[anchor=north east,yshift=-2pt] at (current page.north east) {\includegraphics[height=0.5cm]{helpfiles/cau-logo.png}};
+	\end{tikzpicture}}
